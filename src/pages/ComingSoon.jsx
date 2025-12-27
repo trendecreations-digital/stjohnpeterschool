@@ -34,10 +34,7 @@ const ComingSoon = () => {
                 </div>
 
                 {/* Contact Info */}
-                <div className="space-y-2 text-gray-900">
-                    <p>📞 <span className="font-medium">+91 12345 67890</span></p>
-                    <p>📧 <span className="font-medium">info@ourschool.com</span></p>
-                </div>
+               
 
                 {/* Footer */}
                 <p className="mt-8 text-sm text-gray-800">
