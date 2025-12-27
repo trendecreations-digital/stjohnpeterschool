@@ -10,27 +10,29 @@ import GalleryPage from "./pages/Gallery.jsx";
 import NotFoundPage from "./pages/PageNotFound.jsx";
 import ContactPage from "./pages/Contact.jsx";
 import ScrollToTop from "./components/ui/ScrollToTop.jsx";
+import ComingSoon from './pages/ComingSoon.jsx';
 
 const SportsActivities = () => <div>Sports Activities</div>;
 
 export default function App() {
     return (
-        <BrowserRouter>
-            <ScrollToTop/>
-            <Header/>
-            <div>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<AboutPage/>} />
-                    <Route path="/curriculum" element={<CurriculumPage/>} />
-                    <Route path="/infrastructure" element={<InfrastructurePage />} />
-                    <Route path="/gallery" element={<GalleryPage />} />
-                    <Route path="/contact" element={<ContactPage />} />
-                    {/* 404 Not Found Route */}
-                    <Route path="*" element={<NotFoundPage />} />
-                </Routes>
-            </div>
-            <Footer/>
-        </BrowserRouter>
+        <ComingSoon/>
+        // <BrowserRouter>
+        //     <ScrollToTop/>
+        //     <Header/>
+        //     <div>
+        //         <Routes>
+        //             <Route path="/" element={<Home />} />
+        //             <Route path="/about" element={<AboutPage/>} />
+        //             <Route path="/curriculum" element={<CurriculumPage/>} />
+        //             <Route path="/infrastructure" element={<InfrastructurePage />} />
+        //             <Route path="/gallery" element={<GalleryPage />} />
+        //             <Route path="/contact" element={<ContactPage />} />
+        //             {/* 404 Not Found Route */}
+        //             <Route path="*" element={<NotFoundPage />} />
+        //         </Routes>
+        //     </div>
+        //     <Footer/>
+        // </BrowserRouter>
     );
 }
