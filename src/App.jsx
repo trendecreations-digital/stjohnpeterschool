@@ -17,6 +17,7 @@ const SportsActivities = () => <div>Sports Activities</div>;
 export default function App() {
     return (
         <ComingSoon/>
+        
         // <BrowserRouter>
         //     <ScrollToTop/>
         //     <Header/>
