@@ -1,0 +1,41 @@
+{
+  "title": "St.John Peter Matriculation School",
+  "description": "A nurturing environment for young learners in Springfield.",
+  "home": {
+    "welcome": "Welcome to Springfield Elementary, where learning is fun and every child matters.",
+    "motto": "Knowledge, Integrity, Growth.",
+    "highlights": [
+      "Admissions open for 2024-25.",
+      "State-level Science Olympiad winners.",
+      "Best School Award in District."
+    ]
+  },
+  "about": {
+    "mission": "To nurture young minds and foster a lifelong love of learning.",
+    "vision": "Empowering students to become responsible global citizens.",
+    "history": "Founded in 1985, Springfield Elementary has served the community for over three decades."
+  },
+  "academics": {
+    "overview": "Our curriculum is designed to challenge and inspire students from LKG to Grade 5.",
+    "programs": [
+      "STEM Lab",
+      "Arts & Crafts",
+      "Physical Education"
+    ]
+  },
+  "contact": {
+    "address": "742 Evergreen Terrace, Springfield",
+    "phone": "555-1234",
+    "email": "info@springfieldelementary.edu",
+    "mapLink": "https://maps.google.com/?q=Springfield+Elementary"
+  },
+  "admissions": {
+    "process": "Fill out the online application form and submit required documents.",
+    "requirements": [
+      "Birth certificate",
+      "Previous school records",
+      "Proof of address"
+    ],
+    "deadline": "Applications close on August 31, 2024."
+  }
+}
