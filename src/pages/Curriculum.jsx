@@ -1,5 +1,6 @@
 import React from 'react';
 import CardSection from "../components/CardSection.jsx";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 export default function CurriculumPage() {
     const academicCards = [
@@ -89,6 +90,16 @@ export default function CurriculumPage() {
 
     return (
         <main className="bg-school-secondary text-gray-800">
+              <FloatingWhatsApp
+                    phoneNumber="+916384945201"
+                    accountName="Support Team"
+                    chatMessage="Hi 👋 How can we help you?"
+                    placeholder="Type your message..."
+                    statusMessage="Typically replies within minutes"
+                    allowClickAway={true}
+                    notification={true}
+                    notificationDelay={5}
+                  />
             {/* Hero Section */}
             <section className="text-red-800 py-8 md:py-16 px-6 text-center">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4 uppercase tracking-wide">

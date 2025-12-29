@@ -15,10 +15,37 @@ export default function ContactForm() {
     }
 
     function handleSubmit(e) {
-        e.preventDefault();
-        // Add your API call logic here
-        setSubmitted(true);
-    }
+    e.preventDefault();
+
+    const phoneNumber = "916384945201";
+
+    const message = `
+Hello 👋
+New contact form submission:
+
+👤 Name: ${form.name}
+📧 Email: ${form.email}
+📞 Phone: ${form.phone}
+📝 Message: ${form.message}
+    `;
+
+    const whatsappUrl =
+        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, "_blank");
+
+    // Optional UI feedback
+    setSubmitted(true);
+
+    // Reset form
+    setForm({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+    });
+}
+
 
     return (
         <div className="max-w-xl mx-auto bg-red-800 backdrop-blur-md shadow-2xl rounded-2xl border border-gray-200 p-8 md:p-10 my-10">

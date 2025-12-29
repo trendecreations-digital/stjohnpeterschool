@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button.jsx";
 import logo from "../../public/images/girl.png";
 import {Link} from "react-router-dom";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
-// ✅ Animated Counter Component
 function Counter({ end, label }) {
     const [count, setCount] = useState(0);
 
@@ -52,6 +52,16 @@ export default function Home() {
 
     return (
         <main className="flex-grow font-sans text-gray-800 bg-school-secondary">
+            <FloatingWhatsApp
+        phoneNumber="+916384945201"
+        accountName="Support Team"
+        chatMessage="Hi 👋 How can we help you?"
+        placeholder="Type your message..."
+        statusMessage="Typically replies within minutes"
+        allowClickAway={true}
+        notification={true}
+        notificationDelay={5}
+      />
             {/* Hero Section */}
             <section
                 className="relative h-[90vh] bg-cover bg-center"

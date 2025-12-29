@@ -8,10 +8,21 @@ import {
     Activity,
     Users,
 } from "lucide-react";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 export default function InfrastructurePage() {
     return (
         <main className="bg-school-secondary text-gray-800 py-12">
+              <FloatingWhatsApp
+                    phoneNumber="+916384945201"
+                    accountName="Support Team"
+                    chatMessage="Hi 👋 How can we help you?"
+                    placeholder="Type your message..."
+                    statusMessage="Typically replies within minutes"
+                    allowClickAway={true}
+                    notification={true}
+                    notificationDelay={5}
+                  />
             <div className="space-y-16">
                 {/* Header */}
                 <header className="text-center">

@@ -10,6 +10,7 @@ import GalleryPage from "./pages/Gallery.jsx";
 import NotFoundPage from "./pages/PageNotFound.jsx";
 import ContactPage from "./pages/Contact.jsx";
 import ScrollToTop from "./components/ui/ScrollToTop.jsx";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const SportsActivities = () => <div>Sports Activities</div>;
 
@@ -17,6 +18,7 @@ export default function App() {
     return (
         <BrowserRouter>
             <ScrollToTop/>
+        
             <Header/>
             <div>
                 <Routes>

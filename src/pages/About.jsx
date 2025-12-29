@@ -1,8 +1,18 @@
 import React from "react";
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 export default function AboutPage() {
     return (
         <main className="flex-1 bg-school-secondary">
+                  <FloatingWhatsApp
+                        phoneNumber="916384945201"
+                        accountName="Support Team"
+                        chatMessage="Hi 👋 How can we help you?"
+                        placeholder="Type your message..."
+                        statusMessage="Typically replies within minutes"
+                        allowClickAway={true}
+                        notification={true}
+                        notificationDelay={5}
+                      />
             <div className="container">
                 <div className="">
                     <div className="text-center py-12">

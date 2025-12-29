@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 /**
  * GalleryPage.jsx
@@ -63,6 +64,16 @@ export default function GalleryPage() {
 
     return (
         <main className="min-h-screen bg-school-secondary text-red-800 py-12">
+              <FloatingWhatsApp
+                    phoneNumber="+916384945201"
+                    accountName="Support Team"
+                    chatMessage="Hi 👋 How can we help you?"
+                    placeholder="Type your message..."
+                    statusMessage="Typically replies within minutes"
+                    allowClickAway={true}
+                    notification={true}
+                    notificationDelay={5}
+                  />
             <div className="container mx-auto px-6 lg:px-8">
                 <header className="mb-10 text-center">
                     <h1 className="text-4xl sm:text-5xl uppercase font-bold text-red-800"    >
