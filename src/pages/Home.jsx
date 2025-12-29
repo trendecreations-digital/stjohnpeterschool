@@ -53,7 +53,7 @@ export default function Home() {
     return (
         <main className="flex-grow font-sans text-gray-800 bg-school-secondary">
             <FloatingWhatsApp
-        phoneNumber="+916384945201"
+        phoneNumber="916384945201"
         accountName="Support Team"
         chatMessage="Hi 👋 How can we help you?"
         placeholder="Type your message..."

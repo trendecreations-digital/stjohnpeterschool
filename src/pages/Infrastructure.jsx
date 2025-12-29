@@ -14,7 +14,7 @@ export default function InfrastructurePage() {
     return (
         <main className="bg-school-secondary text-gray-800 py-12">
               <FloatingWhatsApp
-                    phoneNumber="+916384945201"
+                    phoneNumber="916384945201"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
                     placeholder="Type your message..."
