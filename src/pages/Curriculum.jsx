@@ -54,7 +54,7 @@ export default function CurriculumPage() {
             description:
                 "Thirukkural, a universal guide for ethical living, is integral to our curriculum. Through daily recitations and competitions, students im bibe its timeless wisdom and values.",
             image:
-                "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=60",
+                "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=60",
         },
         {
             title: "Sports Activity",

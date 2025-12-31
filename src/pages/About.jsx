@@ -59,7 +59,7 @@ export default function AboutPage() {
                             <div className="md:w-1/3 mx-auto w-full">
                                 <div
                                     className="w-full aspect-[4/3] rounded-xl shadow-lg bg-cover bg-center"
-                                    style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCruSnpW_VLGr4UzXAMKp0jjqj37CEI4arR7lqbOF8hXglkZFT8AHed6fzTCam9uk9XqxDLPiOfUFSjPZYQkXoMfXQSVKsP9bnWkexwX-8aRvgzPVvYFGAirSaAinFvvGSflJRlC3o0ePB_emq4xHWNlak0p4wYLtUsYo4kpU6OPPn6gRmZVCGQYOR2-BWENROXqs5V2YaamYjQdAEHXlcI_nqC4OcYfsmKNOK_4udopNuURNZfjjRenF_ShjshcYVs4syNvW-Soxg")'}}
+                                    style={{backgroundImage: 'url("./images/banner.jpg")'}}
                                 />
                             </div>
                         </div>
@@ -68,7 +68,7 @@ export default function AboutPage() {
                             <div className="md:w-1/3 mx-auto w-full">
                                 <div
                                     className="w-full aspect-[4/3] rounded-xl shadow-lg bg-cover bg-center"
-                                    style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLZ6INLNEgwKI3BwdAoPjw0TtN5iDTpSFMgp0apYFEeTIxUTM3O9pwqPN9YOEgdIE2MWJKjnSoSMNIgrtTGJFOg-KkPAgZ9CexRPJuqc0WzmK0HtE9JtTcwHPeZpKvyvAhpo3on_ctWT-0vYz2PEIxLs7B5knp5EPrZ-BgqCSD_cXJI2GrfEKYpDoKIhOTtZ1o5lo6sTnwvrSqHijc1CyMAnBLkxq8PJqOUoOmPW9L274VNt79QV8dcgcZ6mJ8A6Sopm_P-QoFESc")'}}
+                                    style={{backgroundImage: 'url("/images/gallery/21.JPG")'}}
                                 />
                             </div>
                             <div className="md:w-2/3 md:p-6">
@@ -126,7 +126,7 @@ export default function AboutPage() {
                             <div className="md:w-1/3 mx-auto w-full">
                                 <div
                                     className="w-full aspect-[4/3] rounded-xl shadow-lg bg-cover bg-center"
-                                    style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLZ6INLNEgwKI3BwdAoPjw0TtN5iDTpSFMgp0apYFEeTIxUTM3O9pwqPN9YOEgdIE2MWJKjnSoSMNIgrtTGJFOg-KkPAgZ9CexRPJuqc0WzmK0HtE9JtTcwHPeZpKvyvAhpo3on_ctWT-0vYz2PEIxLs7B5knp5EPrZ-BgqCSD_cXJI2GrfEKYpDoKIhOTtZ1o5lo6sTnwvrSqHijc1CyMAnBLkxq8PJqOUoOmPW9L274VNt79QV8dcgcZ6mJ8A6Sopm_P-QoFESc")'}}
+                                    style={{backgroundImage: 'url("/images/gallery/22.JPG")'}}
                                 />
                             </div>
                         </div>

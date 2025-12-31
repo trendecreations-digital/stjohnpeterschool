@@ -98,7 +98,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="https://images.unsplash.com/photo-1580582932707-520aed937b7b"
+                        src="/images/gallery/7.JPG"
                         alt="Clean Campus"
                         className="rounded-2xl shadow-lg w-full h-72 object-cover"
                     />
@@ -135,7 +135,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1200&q=80"
+                        src="/images/gallery/9.JPG"
                         alt="Audio Visual Room"
                         className="rounded-2xl shadow-lg w-full h-72 object-cover"
                     />
@@ -172,7 +172,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=900&q=80"
+                        src="./images/banner.jpg"
                         alt="Separate Blocks"
                         className="rounded-2xl shadow-lg w-full h-72 object-cover"
                     />

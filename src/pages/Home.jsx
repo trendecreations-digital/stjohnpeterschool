@@ -53,15 +53,15 @@ export default function Home() {
     return (
         <main className="flex-grow font-sans text-gray-800 bg-school-secondary">
             <FloatingWhatsApp
-        phoneNumber="916384945201"
-        accountName="Support Team"
-        chatMessage="Hi 👋 How can we help you?"
-        placeholder="Type your message..."
-        statusMessage="Typically replies within minutes"
-        allowClickAway={true}
-        notification={true}
-        notificationDelay={5}
-      />
+                phoneNumber="916384945201"
+                accountName="Support Team"
+                chatMessage="Hi 👋 How can we help you?"
+                placeholder="Type your message..."
+                statusMessage="Typically replies within minutes"
+                allowClickAway={true}
+                notification={true}
+                notificationDelay={5}
+            />
             {/* Hero Section */}
             <section
                 className="relative h-[90vh] bg-cover bg-center"
@@ -173,12 +173,13 @@ export default function Home() {
             </section>
 
             {/* Infrastructure */}
-            <section className="flex flex-col-reverse md:flex-row justify-between py-8 mx-auto">
-                <div className="flex items-center p-8">
-                    <div className="bg-gray-50 p-8 md:p-20 rounded-3xl shadow-2xl z-index-10">
-                        <ul className="list-disc list-inside space-y-2">
-                            <li>Separate, Well-equipped labs for Computer and Science practicals.</li>
-                            <li>Audio-visual rooms equipped for multimedia learning experiences.</li>
+            <section className="flex flex-col lg:flex-row justify-between py-10 max-w-7xl mx-auto gap-8">
+
+                <div className="flex items-center justify-center px-4 md:px-8 lg:px-0">
+                    <div className="bg-gray-50 p-6 md:p-10 lg:p-14 rounded-3xl shadow-xl w-full max-w-xl">
+                        <ul className="list-disc list-inside space-y-3 text-gray-700">
+                            <li>Separate, well-equipped labs for Computer and Science practicals</li>
+                            <li>Audio-visual rooms for multimedia learning experiences</li>
                             <li>Dedicated play area and sports facilities</li>
                             <li>Digital classrooms with modern teaching aids</li>
                             <li>Separate block for girls ensuring safety</li>
@@ -190,33 +191,35 @@ export default function Home() {
                         <h2 className="text-4xl font-bold uppercase text-red-800 text-center">
                             Infrastructure
                         </h2>
-                        <h2 className="text-2xl font-semibold text-red-800 uppercase text-center">
+                        <h3 className="text-xl md:text-2xl font-semibold text-red-800 uppercase text-center">
                             at St. John Peter
-                        </h2>
+                        </h3>
                     </div>
                     <div className="flex justify-center items-center">
                         <img
-                            loading={"lazy"}
+                            loading="lazy"
                             src="/images/home/13.png"
                             alt="Infrastructure"
-                            className="max-h-72 md:max-h-[540px] w-full"
+                            className="w-full max-w-md md:max-w-lg lg:max-w-xl h-auto object-contain"
                         />
                     </div>
                 </div>
             </section>
 
+
             {/* Counters */}
             <section className="flex flex-col md:flex-row gap-6 px-8 py-12 bg-red-800 justify-center">
-                <div className="grid grid-cols-2 md:grid-cols-1 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-1 gap-6 min-w-52">
                     <Counter end={1000} label="Students"/>
                     <Counter end={70} label="Faculty"/>
                 </div>
                 <div className="rounded-2xl bg-school-secondary p-6 shadow-md max-w-6xl">
                     <h2 className="text-4xl font-bold text-red-800 uppercase text-center">Quick updates & notices</h2>
                     <ul className="list-disc list-inside space-y-2 pt-4">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget consectetur sagittis, nisl nunc consectetur nisi, euismod aliquam nisl nunc eu nisi. Integer non justo vitae augue laoreet eleifend vel vel nibh. Donec non urna non augue euismod ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vitae ipsum in turpis viverra vehicula non id nunc.
+                        <li>Thirukkural Recitation Competition conducted on 07.01.2026.
                         </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget consectetur sagittis, nisl nunc consectetur nisi, euismod aliquam nisl nunc eu nisi. Integer non justo vitae augue laoreet eleifend vel vel nibh. Donec non urna non augue euismod ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vitae ipsum in turpis viverra vehicula non id nunc.
+                        <li>Pongal was celebrated with traditional activities, cultural programs, and student
+                            participation, highlighting our rich heritage.
                         </li>
                     </ul>
                 </div>
@@ -252,38 +255,57 @@ export default function Home() {
             </section>
 
             {/* Achievements */}
-            <section className="px-8 py-16 rounded-xl max-w-7xl mx-auto">
-                <h2 className="mb-8 text-3xl text-center font-bold text-red-800 uppercase">
+            <section className="px-6 py-16 max-w-7xl mx-auto">
+                <h2 className="mb-12 text-3xl font-bold text-center text-red-800 uppercase tracking-wide">
                     Achievements
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8">
                     {[
                         {
-                            title: "Academic Excellence",
-                            img: "https://img.freepik.com/free-photo/successful-graduate-student_329181-14084.jpg",
+                            icon: "🏆",
+                            title: "Scouts & Guides Excellence",
+                            description:
+                                "Our Kalam Scouts and Guides Group is officially registered under the Bharat Scouts and Guides, functioning under the Thirumangalam Scout District, Tamil Nadu. This registration reflects our school’s strong commitment to structured youth development and national service.",
                         },
                         {
-                            title: "Sports and Athletics",
-                            img: "https://img.freepik.com/free-photo/school-kids-running-field_23-2148219914.jpg",
+                            icon: "🧗",
+                            title: "National-Level Adventure Participation",
+                            description: "A total of 15 Scouts from our school have successfully participated in National-Level Adventure Scouts programmes, showcasing courage, endurance, teamwork, and leadership skills at a national platform.",
                         },
                         {
-                            title: "Cultural Achievements",
-                            img: "https://img.freepik.com/free-photo/students-performing-stage_23-2148219801.jpg",
+                            icon: "🏅",
+                            title: "Governor Award Achievement",
+                            description:
+                                "Our institution has achieved a remarkable milestone with 24 Scouts and 24 Guides earning the prestigious Governor Award. These students were directly awarded certificates by the Hon’ble Governor of Tamil Nadu, marking proud moment for our school and the entire Scouts and Guides fraternity.",
+                        },
+                        {
+                            icon: "🌟",
+                            title: "District-Level Excellence",
+                            description:
+                                "More than 70 students from our school have actively participated and excelled in District-Level Scouts and Guides programmes, demonstrating consistent involvement in community service, leadership training, and character-building activities.",
+                        },
+                        {
+                            icon: "🌱",
+                            title: "Building Responsible Citizens",
+                            description:
+                                "Through Scouts and Guides, our school continues to nurture students into responsible citizens, confident leaders, and socially committed individuals, upholding the motto of service before self.",
                         },
                     ].map((item, i) => (
-                        <div key={i} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-xl transition">
-                            <img
-                                loading={"lazy"}
-                                src={item.img}
-                                alt={item.title}
-                                className="w-full h-56 object-cover"
-                            />
-                            <div className="p-4">
-                                <h3 className="font-bold text-red-800 mb-1">{item.title}</h3>
-                                <p className="text-gray-600 text-sm">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget consectetur sagittis, nisl nunc consectetur nisi, euismod aliquam nisl nunc eu nisi. Integer non justo vitae augue laoreet eleifend vel vel nibh. Donec non urna non augue euismod ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas vitae ipsum in turpis viverra vehicula non id nunc.
-                                </p>
+                        <div
+                            key={i}
+                            className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg transition"
+                        >
+                            <div className="flex items-center mb-4">
+                                <div className="text-3xl mr-3">{item.icon}</div>
+                                <h3 className="text-lg font-semibold text-red-800">
+                                    {item.title}
+                                </h3>
                             </div>
+
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                {item.description}
+                            </p>
                         </div>
                     ))}
                 </div>
