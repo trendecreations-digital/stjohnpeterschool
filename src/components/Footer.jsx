@@ -39,11 +39,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3 hover:text-yellow-400 transition-colors duration-200">
                                 <MailIcon className="w-5 h-5 shrink-0"/>
-                                <span className=" font-bold">info@school.edu.in</span>
+                                <span className=" font-bold">Johnpetermatric@gmail.com</span>
                             </li>
                             <li className="flex items-center gap-3 hover:text-yellow-400 transition-colors duration-200">
                                 <PhoneIcon className="w-5 h-5 shrink-0"/>
-                                <span className=" font-bold">+91 12345 67890</span>
+                                <span className=" font-bold">8778837765, 8760130057, 0452-2673095</span>
                             </li>
                         </ul>
                     </div>
