@@ -82,10 +82,12 @@ export default function Home() {
                             We foster a vibrant learning community where students excel
                             academically and personally, preparing them for a bright future.
                         </p>
+                        <Link to={"/contact"}>
                         <Button
                             className="mt-8 bg-red-800 text-gray-50 px-6 py-3 text-xl font-bold rounded-lg shadow hover:text-yellow-500 transition">
                             Apply Now
                         </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
