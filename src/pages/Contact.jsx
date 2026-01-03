@@ -56,15 +56,15 @@ export default function ContactPage() {
 
                     <div className="space-y-3 text-gray-800">
                         <p><strong>📍 Address:</strong> Jeevanagar 2nd St, Rathinapuram, Madurai, Tamil Nadu 625011</p>
-                        <p><strong>📞 Phone:</strong> +91 12345 67890</p>
-                        <p><strong>✉️ Email:</strong> info@school.edu.in</p>
+                        <p><strong>📞 Phone:</strong> +91 8778837765, 8760130057, 0452-2673095</p>
+                        <p><strong>✉️ Email:</strong> johnpetermatric@gmail.com</p>
                     </div>
 
                     {/* Google Map Embed */}
                     <div className="rounded-xl overflow-hidden shadow-lg border">
                         <iframe
                             title="St John Peter Matriculation School Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.534847026272!2d78.14015227478694!3d9.924857890172582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5851bfc76f3%3A0x7f1f9f85f01d7a24!2sSt.%20John%20Peter%20Matriculation%20School!5e0!3m2!1sen!2sin!4v1730489580000!5m2!1sen!2sin"
+                            src="https://share.google/z8Ex2bMbS7znllmpl"
                             width="100%"
                             height="450"
                             style={{border: 0}}
