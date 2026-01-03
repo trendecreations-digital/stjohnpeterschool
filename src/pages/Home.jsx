@@ -83,16 +83,62 @@ export default function Home() {
                             academically and personally, preparing them for a bright future.
                         </p>
                         <Link to={"/contact"}>
-                        <Button
-                            className="mt-8 bg-red-800 text-gray-50 px-6 py-3 text-xl font-bold rounded-lg shadow hover:text-yellow-500 transition">
-                            Apply Now
-                        </Button>
+                            <Button
+                                className="mt-8 bg-red-800 text-gray-50 px-6 py-3 text-xl font-bold rounded-lg shadow hover:text-yellow-500 transition">
+                                Apply Now
+                            </Button>
                         </Link>
                     </div>
                 </div>
             </section>
 
-            {/* Curriculum KG to V */}
+            <section className="bg-red-800 py-12 bg-[url('/images/overlay.png')] bg-cover bg-center bg-blend-overlay">
+                {/* Inner Container */}
+                <div
+                    className="mx-auto max-w-7xl
+                   bg-school-secondary
+                   rounded-3xl shadow-2xl
+                   flex flex-col md:flex-row
+                   items-center justify-between
+                   px-6 md:px-16 py-10 md:py-16
+                   bg-[url('/images/overlay.png')] bg-cover bg-center bg-blend-overlay"
+                >
+                    {/* Image Section */}
+                    <div className="flex justify-center md:w-2/3">
+                        <img
+                            loading="lazy"
+                            src="/images/35.png"
+                            alt="Infrastructure"
+                            className="w-full max-w-xl md:max-w-3xl
+                           max-h-72 md:max-h-[480px]
+                           object-contain"
+                        />
+                    </div>
+
+                    {/* Text Section */}
+                    <div className="relative z-10 flex flex-col justify-center items-start px-6 md:px-20 mb-10 md:mb-0 text-left">
+                        <h2 className="text-3xl md:text-5xl font-extrabold uppercase text-red-700 leading-tight">
+                            35 Years of
+                            <br/> Educational Excellence
+                        </h2>
+                        <h3 className="text-lg md:text-2xl font-semibold text-red-900 mt-3">
+                            Nurturing Young Minds Since 1991
+                        </h3>
+                        <p className="mt-6 text-base md:text-lg text-gray-700 leading-relaxed">
+                            For over three and a half decades, St. John Peter Matriculation School has been
+                            a center of academic excellence, character building, and holistic development.
+                            Rooted in strong values and progressive education, we continue to inspire
+                            generations of learners to achieve their fullest potential.
+                        </p>
+
+                        <div className="mt-6 w-full h-1 bg-red-500 rounded-full"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* Curriculum KG to V */
+            }
             <section className="flex flex-col-reverse md:flex-row justify-between py-8
                bg-[url('/images/overlay.png')]
                bg-cover bg-center bg-blend-overlay">
