@@ -117,7 +117,7 @@ export default function Home() {
 
                     {/* Text Section */}
                     <div className="relative z-10 flex flex-col justify-center items-start px-6 md:px-20 mb-10 md:mb-0 text-left">
-                        <h2 className="text-3xl md:text-5xl font-extrabold uppercase text-red-700 leading-tight">
+                        <h2 className="text-3xl md:text-5xl font-extrabold uppercase text-red-800 leading-tight">
                             35 Years of
                             <br/> Educational Excellence
                         </h2>
