@@ -91,7 +91,7 @@ export default function CurriculumPage() {
     return (
         <main className="bg-school-secondary text-gray-800">
               <FloatingWhatsApp
-                    phoneNumber="916384945201"
+                    phoneNumber="8778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
                     placeholder="Type your message..."

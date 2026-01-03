@@ -65,7 +65,7 @@ export default function GalleryPage() {
     return (
         <main className="min-h-screen bg-school-secondary text-red-800 py-12">
               <FloatingWhatsApp
-                    phoneNumber="916384945201"
+                    phoneNumber="8778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
                     placeholder="Type your message..."

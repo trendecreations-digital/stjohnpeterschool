@@ -4,7 +4,7 @@ export default function AboutPage() {
     return (
         <main className="flex-1 bg-school-secondary">
                   <FloatingWhatsApp
-                        phoneNumber="916384945201"
+                        phoneNumber="8778837765"
                         accountName="Support Team"
                         chatMessage="Hi 👋 How can we help you?"
                         placeholder="Type your message..."

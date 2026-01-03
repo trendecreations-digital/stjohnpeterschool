@@ -64,14 +64,12 @@ export default function ContactPage() {
                     <div className="rounded-xl overflow-hidden shadow-lg border">
                         <iframe
                             title="St John Peter Matriculation School Location"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.534847026272!2d78.14015227478694!3d9.924857890172582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5851bfc76f3%3A0x7f1f9f85f01d7a24!2sSt.%20John%20Peter%20Matriculation%20School!5e0!3m2!1sen!2sin!4v1730489580000!5m2!1sen!2sin"
-                            width="100%"
-                            height="450"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.8148985446184!2d78.1033146154696!3d9.901936883870022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf8604cc8e67%3A0x6cda2629a67e6dde!2sSt.John%20Peter%20Matriculation%20School!5e0!3m2!1sen!2sin!4v1704378600000!5m2!1sen!2sin"
+                            className="w-full h-[450px]"
                             style={{border: 0}}
-                            allowFullScreen=""
+                            allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className="w-full h-[450px]"
                         ></iframe>
                     </div>
                 </div>
