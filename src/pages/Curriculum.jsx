@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import CardSection from "../components/CardSection.jsx";
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
+const FloatingWhatsApp = lazy(() =>
+    import("react-floating-whatsapp").then((m) => ({
+        default: m.FloatingWhatsApp,
+    }))
+);
 
 export default function CurriculumPage() {
     const academicCards = [
@@ -90,7 +95,8 @@ export default function CurriculumPage() {
 
     return (
         <main className="bg-school-secondary text-gray-800">
-              <FloatingWhatsApp
+            <Suspense fallback={null}>
+                <FloatingWhatsApp
                     phoneNumber="8778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
@@ -99,7 +105,8 @@ export default function CurriculumPage() {
                     allowClickAway={true}
                     notification={true}
                     notificationDelay={5}
-                  />
+                />
+            </Suspense>
             {/* Hero Section */}
             <section className="text-red-800 py-8 md:py-16 px-6 text-center">
                 <h1 className="text-3xl md:text-5xl font-bold mb-4 uppercase tracking-wide">
@@ -107,8 +114,8 @@ export default function CurriculumPage() {
                 </h1>
                 <p className="max-w-3xl mx-auto text-lg opacity-90 text-gray-800">
                     Our school offers a comprehensive educational journey from Pre- KG to Grade X.<br/>
-                    We integrate a specialized combined curriculum, combining CBSC standards up to Grade IV with a
-                    unified syllabus from Grade V to Grade X.
+                    We integrate a specialized combined curriculum, combining CBSE Syllabus upto grade V and unified
+                    syllabus for Grade VI to X.
                 </p>
             </section>
 

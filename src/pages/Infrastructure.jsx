@@ -1,4 +1,4 @@
-import React from "react";
+import React, {lazy, Suspense} from "react";
 import {
     ShieldCheck,
     Microscope,
@@ -8,12 +8,18 @@ import {
     Activity,
     Users,
 } from "lucide-react";
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
+const FloatingWhatsApp = lazy(() =>
+    import("react-floating-whatsapp").then((m) => ({
+        default: m.FloatingWhatsApp,
+    }))
+);
 
 export default function InfrastructurePage() {
     return (
         <main className="bg-school-secondary text-gray-800 py-12">
-              <FloatingWhatsApp
+            <Suspense fallback={null}>
+                <FloatingWhatsApp
                     phoneNumber="8778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
@@ -22,7 +28,8 @@ export default function InfrastructurePage() {
                     allowClickAway={true}
                     notification={true}
                     notificationDelay={5}
-                  />
+                />
+            </Suspense>
             <div className="space-y-16">
                 {/* Header */}
                 <header className="text-center">
@@ -114,7 +121,7 @@ export default function InfrastructurePage() {
                     />
                     <div className="order-1 md:order-2">
                         <h2 className="text-2xl font-semibold text-red-800 flex items-center gap-2 mb-3 uppercase">
-                            <Monitor className="text-red-800 min-w-6" /> LED PLASMAS AND PROTECTORS WITH SOUND SYSTEM
+                            <Monitor className="text-red-800 min-w-6" /> LED PLASMAS AND PROJECTORS WITH SOUND SYSTEM
                         </h2>
                         <p className="leading-relaxed text-gray-800">
                             To enhance academic engagement and foster innovation, we've integrated state-of-the-art LED plasma TVs and projectors with sound systems

@@ -1,25 +1,48 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 export default function Navbar() {
+    const links = [
+        { name: "Home", path: "/" },
+        { name: "About Us", path: "/about" },
+        { name: "Curriculum", path: "/curriculum" },
+        { name: "Infrastructure", path: "/infrastructure" },
+        { name: "Gallery", path: "/gallery" },
+        { name: "Contact", path: "/contact" },
+    ];
+
     return (
         <nav className="hidden md:flex items-center gap-8">
-            {[
-                { name: "About Us", path: "/about" },
-                { name: "Curriculum", path: "/curriculum" },
-                { name: "Infrastructure", path: "/infrastructure" },
-                { name: "Gallery", path: "/gallery" },
-                { name: "Contact", path: "/contact" },
-            ].map((link, i) => (
-                <Link
+            {links.map((link, i) => (
+                <NavLink
                     key={i}
                     to={link.path}
-                    className="text-sm font-medium uppercase text-gray-50 hover:text-yellow-400 transition-colors relative group"
+                    end
+                    className={({ isActive }) =>
+                        `relative text-sm font-medium uppercase transition-colors duration-200
+                        ${
+                            isActive
+                                ? "text-yellow-400"
+                                : "text-gray-50 hover:text-yellow-400"
+                        }`
+                    }
                 >
-                    {link.name}
-                    {/* Underline animation */}
-                    <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
+                    {({ isActive }) => (
+                        <>
+                            {link.name}
+
+                            {/* Underline */}
+                            <span
+                                className={`absolute left-0 -bottom-1 h-[2px] bg-yellow-400 transition-all duration-200
+                                ${
+                                    isActive
+                                        ? "w-full"
+                                        : "w-0 group-hover:w-full"
+                                }`}
+                            />
+                        </>
+                    )}
+                </NavLink>
             ))}
         </nav>
     );

@@ -55,7 +55,7 @@ export default function ContactPage() {
                     </p>
 
                     <div className="space-y-3 text-gray-800">
-                        <p><strong>📍 Address:</strong> Jeevanagar 2nd St, Rathinapuram, Madurai, Tamil Nadu 625011</p>
+                        <p><strong>📍 Address:</strong> Jeevanagar 2nd street, Jaihindpuram, Madurai - 625011</p>
                         <p><strong>📞 Phone:</strong> +91 8778837765, 8760130057, 0452-2673095</p>
                         <p><strong>✉️ Email:</strong> johnpetermatric@gmail.com</p>
                     </div>

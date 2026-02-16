@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button.jsx";
-import logo from "../../public/images/girl.png";
+import students from "../../public/images/girl.avif";
 import {Link} from "react-router-dom";
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
@@ -67,25 +67,38 @@ export default function Home() {
                 className="relative h-[90vh] bg-cover bg-center"
                 style={{
                     backgroundImage:
-                        'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("./images/banner.jpg")',
+                        'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("/images/banner.avif")',
                 }}
             >
-                <div className="absolute inset-0 flex items-center justify-around text-center text-white px-6">
-                    <div className="hidden md:block md:w-96">
-                        <img loading={"lazy"} src={logo} alt="students" className="mt-16 w-96"/>
+                <div
+                    className="absolute inset-0 flex items-end md:items-center justify-around text-center text-white px-6 pb-8 md:pb-0">
+
+                    <div className="hidden md:flex items-end h-full">
+                        <img
+                            src={students}
+                            alt="students"
+                            loading="lazy"
+                            className="max-h-[100%] w-auto max-w-2xl object-contain"
+                        />
                     </div>
-                    <div>
+
+                    {/* Text Content */}
+                    <div className="max-w-2xl">
                         <h1 className="text-5xl md:text-6xl font-semibold uppercase">
-                            Inspiring Minds, <br/> Shaping Futures
+                            Inspiring Minds,
+                            <br/> Shaping Futures
                         </h1>
-                        <p className="mt-4 max-w-2xl text-lg text-gray-100">
+
+                        <p className="mt-4 text-lg text-gray-100">
                             We foster a vibrant learning community where students excel
                             academically and personally, preparing them for a bright future.
                         </p>
-                        <Link to={"/contact"}>
+
+                        <Link to="/contact">
                             <Button
-                                className="mt-8 bg-red-800 text-gray-50 px-6 py-3 text-xl font-bold rounded-lg shadow hover:text-yellow-500 transition">
-                                Apply Now
+                                className="mt-8 bg-red-800 text-gray-50 px-6 py-3 text-xl font-bold rounded-lg shadow hover:text-yellow-500 transition"
+                            >
+                                Enroll Now
                             </Button>
                         </Link>
                     </div>
@@ -116,7 +129,8 @@ export default function Home() {
                     </div>
 
                     {/* Text Section */}
-                    <div className="relative z-10 flex flex-col justify-center items-start px-6 md:px-20 mb-10 md:mb-0 text-left">
+                    <div
+                        className="relative z-10 flex flex-col justify-center items-start px-6 md:px-20 mb-10 md:mb-0 text-left">
                         <h2 className="text-3xl md:text-5xl font-extrabold uppercase text-red-800 leading-tight">
                             35 Years of
                             <br/> Educational Excellence
@@ -288,7 +302,7 @@ export default function Home() {
                     <div className="bg-red-800 p-8 rounded-xl bg-[url('/images/overlay.png')]
                bg-cover bg-center bg-blend-overlay">
                         <h2 className="text-3xl font-bold text-center uppercase text-school-secondary mb-8">
-                            Last Year’s Toppers
+                            Topper of the Years 2024 to 2025
                         </h2>
                         <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10">
                             {toppers.map((t, i) => (
