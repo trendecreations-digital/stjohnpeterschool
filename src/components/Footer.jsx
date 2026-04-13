@@ -33,7 +33,7 @@ export default function Footer() {
                             <li className="flex items-start gap-3 hover:text-yellow-400 transition-colors duration-200">
                                 <MapPin className="w-5 h-5 shrink-0 mt-0.5"/>
                                 <span className=" font-bold">
-                                  Jeevanagar 2nd street, Jaihindpuram,
+                                  Jeevanagar 2nd Main Road, Jaihindpuram,
                                   <br/> Madurai - 625011
                                 </span>
                             </li>

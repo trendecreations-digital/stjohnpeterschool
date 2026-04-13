@@ -8,33 +8,43 @@ export default function CardSection({ sectionTitle, sectionSubtitle, cards }) {
                 <h2 className="text-4xl font-bold text-school-secondary uppercase tracking-wide">
                     {sectionTitle}
                 </h2>
-                <p className="text-gray-100 max-w-2xl mx-auto mt-3">{sectionSubtitle}</p>
+                <p className="text-gray-100 max-w-2xl mx-auto mt-3 leading-relaxed">
+                    {sectionSubtitle}
+                </p>
             </div>
 
-            {/* Cards */}
-            <div className="flex flex-wrap mx-auto gap-4">
+            {/* Cards Grid */}
+            <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-7xl mx-auto">
                 {cards.map((card, index) => (
                     <div
                         key={index}
-                        className="w-full sm:w-[22rem] md:w-[28rem] bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-[1.02] transition duration-300"
+                        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 flex flex-col"
                     >
+                        {/* Image */}
                         <img
-                            loading={"lazy"}
+                            loading="lazy"
                             src={card.image}
                             alt={card.title}
-                            className="w-full h-48 object-cover"
+                            className="w-full h-56 object-cover"
                         />
-                        <div className="p-6 bg-school-secondary h-full">
-                            <h3 className="text-2xl font-semibold text-red-800 mb-3 text-center uppercase">
+
+                        {/* Content */}
+                        <div className="p-6 bg-school-secondary flex flex-col flex-grow">
+                            <h3 className="text-xl font-semibold text-red-800 mb-3 text-center uppercase">
                                 {card.title}
                             </h3>
-                            <div className="text-gray-800">{card.description}</div>
+
+                            <div className="text-gray-800 whitespace-pre-line leading-relaxed text-sm">
+                                {card.description}
+                            </div>
+
+                            {/* Points */}
                             {card.points && (
-                                <ul className="list-disc list-inside">
+                                <ul className="mt-4 space-y-2">
                                     {card.points.map((point, i) => (
-                                        <li className="flex items-baseline gap-4">
-                                        <span className="text-2xl font-bold">&#8227;</span>
-                                        <span className="text-lg">{point}</span>
+                                        <li key={i} className="flex items-start gap-2">
+                                            <span className="text-red-700 font-bold">•</span>
+                                            <span className="text-gray-800 text-sm">{point}</span>
                                         </li>
                                     ))}
                                 </ul>

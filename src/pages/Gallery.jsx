@@ -71,7 +71,7 @@ export default function GalleryPage() {
         <main className="min-h-screen bg-school-secondary text-red-800 py-12">
             <Suspense fallback={null}>
                 <FloatingWhatsApp
-                    phoneNumber="8778837765"
+                    phoneNumber="+918778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
                     placeholder="Type your message..."

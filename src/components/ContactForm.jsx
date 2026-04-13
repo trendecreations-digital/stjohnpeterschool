@@ -17,7 +17,7 @@ export default function ContactForm() {
     function handleSubmit(e) {
     e.preventDefault();
 
-    const phoneNumber = "8778837765";
+    const phoneNumber = "+918778837765";
 
     const message = `
 Hello 👋

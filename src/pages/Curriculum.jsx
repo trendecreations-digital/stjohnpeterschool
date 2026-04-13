@@ -12,21 +12,29 @@ export default function CurriculumPage() {
         {
             title: "Skills of Calligraphy, Reading & Communication",
             description:
-                "We recognize the importance of reading, writing, and communication skills as essential life assets. Our RRR (Rapid Reading Rebel) program focuses on enhancing these skills for lifelong success.",
+                "At our school, we recognize the paramount importance of reading, writing, and communication skills as fundamental assets for every student. These skills are essential for navigating the demands of a globalized society in everyday life. Understanding their significance, we prioritize these skills in our academic coaching, exemplified by our RRR (Rapid Reading Rebel) program.",
             image:
                 "/images/curriculum/reading.JPG",
         },
         {
             title: "AMIR (Academic Management Individual Report)",
             description:
-                "Our AMIR initiative evaluates each student's academic performance and discipline every three months, ensuring personalized support and holistic development.",
+                "Introducing our latest initiative, the Academic Management Individual Report (AMIR). This method meticulously evaluates each student's academic performance and overall discipline every three months. AMIR ensures comprehensive monitoring and personalized support for every student's growth and development.",
+            image:
+                "/images/curriculum/pta.JPG",
+        },
+        {
+            title: "Zero Hours",
+            description:
+                "At our school, we implement the Zero Hour system, offering students\n" +
+                "additional subject knowledge beyond the academic syllabus. This dedicated time allows for deeper exploration of topics, fostering a well-rounded understanding and promoting academic enrichment.",
             image:
                 "/images/curriculum/pta.JPG",
         },
         {
             title: "Club Activities",
             description:
-                "Subject-specific clubs enrich students’ knowledge beyond textbooks, encouraging creativity and deeper understanding.",
+                "We've established subject-specific clubs and conduct regular activities to enrich students with extensive subject knowledge beyond the academic syllabus. These creative and enthusiastic sessions promote holistic learning experiences and foster a deeper understanding of various subjects.",
             points: [
                 "Tamil - முத்தமிழ் மன்றம்",
                 "English - Robert Frost English Club",
@@ -48,46 +56,50 @@ export default function CurriculumPage() {
                 "/images/curriculum/abacus.JPG",
         },
         {
-            title: "Pattam Paper — Extensive Reading",
+            title: "Pattam Paper - Extensive Reading",
             description:
-                "Weekly once, our students receive Pattam paper from Dinamalar Daily, promoting extensive reading. They engage with special question papers and participate in Pattam Magazine Quiz competitions.",
+                "Weekly, our students receive Pattam paper by Dinamalar Daily, promoting extensive reading. They engage with special question papers and participate in Pattam Magazine competitions.",
             image:
                 "/images/curriculum/newspaper.JPG",
         },
         {
-            title: "Thirukkural Recitation",
+            title: "Thirukkural - Recitation",
             description:
-                "Thirukkural, a universal guide for ethical living, is integral to our curriculum. Through daily recitations and competitions, students im bibe its timeless wisdom and values.",
+                "Thirukkural, a universal guide for ethical living, is integral to our curriculum. Through daily recitations and competitions, students imbibe its timeless wisdom and values.",
             image:
                 "https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1000&q=60",
         },
         {
             title: "Sports Activity",
             description:
-                "Sports are more than just physical activities; they instill discipline and promote proactive fitness among our students. Our dedicated Physical Education staff ensures comprehensive training in various sports and games, cultivating skills and fostering a spirit of sportsmanship. The success of our school in zonal and district-level competitions attests to our commitment to excellence in sports.\n" +
-                "\nThrough participation in sports activities, students develop teamwork, resilience, and leadership skills, essential for their holistic development. Beyond the physical benefits, sports teach valuable life lessons such as dedication, perseverance, and fair play.",
+                "Sports are more than just physical activities; they instill discipline and promote proactive fitness among our students. Our dedicated Physical Education staff ensures comprehensive training in various sports and games, cultivating skills and fostering a spirit of sportsmanship. The success of our school in zonal and district-level competitions attests to our commitment to excellence in sports" +
+                "\n\n Through participation in sports activities, students develop teamwork, resilience, and leadership skills, essential for their holistic development. Beyond the physical benefits, sports teach valuable life lessons such as dedication, perseverance, and fair play." +
+                "\n\n We believe that a robust sports program not only enhances physical health but also nurtures character and instills values that students carry with them throughout their lives. At our school, sports serve as a cornerstone of our educational philosophy, empowering students to excel both on and off the field.",
             image:
                 "/images/curriculum/sports.JPG",
         },
         {
             title: "Emboldens",
             description:
-                "\"Emboldens\" signifies our commitment to nurturing confidence, resilience, and leadership qualities in our students. Through mentorship, encouragement, and diverse opportunities, we empower them to embrace challenges, express themselves boldIy, and become agents of positive change in their communities. Our holistic approach fosters self-assurance, ena bling students to navigate complexities with courage, integrity, and creativity.",
+                "\"Emboldens\" signifies our commitment to nurturing confidence, resilience, and leadership qualities in our students. Through mentorship, encouragement, and diverse opportunities, we empower them to embrace challenges, express themselves boldly, and become agents of positive change in their communities. Our holistic approach fosters self-assurance, enabling students to navigate complexities with courage, integrity, and creativity." +
+                "\n\n Whether in academics, extracurricular activities, or personal endeavors, we strive to instill a sense of empowerment that fuels their aspirations and propels them towards success. At our school, \"Emboldens\" encapsulates our dedication to equipping students with the skills and mindset needed to\n" +
+                "thrive in an ever-evolving world. SPL ",
             image:
                 "/images/curriculum/spl.jpg",
         },
         {
             title: "Election & Badges",
             description:
-                "We conduct Student Pupil Leader elections to let the students get introduced and practiced into the basic political system and to become a socially responsible citizen of the country in future. The Student Pupil Leader\n" +
-                "will be enriched with the leadership qualities. We provide I CARD badges for the student discipline and Speech Master badge for good communication skill.",
+                "We conduct Student Pupil Leader elections to let the students get introduced and practiced into the basic political system and to become a socially responsible citizen of the country in future. The Student Pupil Leader will be enriched with the leadership qualities. We provide I CARD badges for the student discipline and Speech Master badge for good communication skill.",
             image:
                 "/images/curriculum/badge.JPG",
         },
         {
             title: "Cultural Activities & Field Trips",
             description:
-                "our carefully curated field trips offer students immersive learning experiences outside the classroom, allowing them to explore new environments, interact with experts, and gain hands-on knowledge in various fields. Whether visiting historical landmarks, scientific institutions, or natural wonders, each excursion is desig ned to ignite curiosity, stimulate creativity, and foster a lifelong love for learning. At our school, cultural activities and field trips are more than just educational outings—they are opportunities for students to broaden their horizons, forge lasting memories, and cultivate a deep appreciation for the world around them.",
+                "At our school, we believe in the transformative power of cultural activities and field trips to enrich the educational experience. Through vibrant cultural" +
+                "programs and activities, we celebrate diversity and honor the rich tapestry of social and cultural backgrounds within our community. From traditional dances and music performances to art exhibitions and culinary festivals, these events provide students with a platform to showcase their talents and learn from one another." +
+                "\n\n Additionally, our carefully curated field trips offer students immersive learning experiences outside the classroom, allowing them to explore new environments, interact with experts, and gain hands-on knowledge in various fields. Whether visiting historical landmarks, scientific institutions, or natural wonders, each excursion is designed to ignite curiosity, stimulate creativity, and foster a lifelong love for learning. At our school, cultural activities and field trips are more than just educational outings they are opportunities for students to broaden their horizons, forge lasting memories, and cultivate a deep appreciation for the world around them.",
             image:
                 "/images/curriculum/culturals.JPG",
         },
@@ -97,7 +109,7 @@ export default function CurriculumPage() {
         <main className="bg-school-secondary text-gray-800">
             <Suspense fallback={null}>
                 <FloatingWhatsApp
-                    phoneNumber="8778837765"
+                    phoneNumber="+918778837765"
                     accountName="Support Team"
                     chatMessage="Hi 👋 How can we help you?"
                     placeholder="Type your message..."
@@ -113,9 +125,9 @@ export default function CurriculumPage() {
                     Academic
                 </h1>
                 <p className="max-w-3xl mx-auto text-lg opacity-90 text-gray-800">
-                    Our school offers a comprehensive educational journey from Pre- KG to Grade X.<br/>
-                    We integrate a specialized combined curriculum, combining CBSE Syllabus upto grade V and unified
-                    syllabus for Grade VI to X.
+                    Our school offers a comprehensive educational journey from Pre- KG to Grade
+                    X. We integrate a specialized combined curriculum, combining CBSC standards up to Grade IV with a
+                    unified syllabus from Grade V to Grade X.
                 </p>
             </section>
 
@@ -126,7 +138,7 @@ export default function CurriculumPage() {
                         loading={"lazy"}
                         src="/images/curriculum/academic.JPG"
                         alt="Academic Excellence"
-                        className="rounded-2xl shadow-lg max-h-64 object-cover md:max-h-[520px] w-full"
+                        className="rounded-2xl shadow-lg max-h-64 object-cover md:max-h-[320px] w-full"
                     />
                     <div>
                         <h2 className="text-3xl font-semibold text-red-800 mb-4 uppercase text-center">
@@ -166,10 +178,8 @@ export default function CurriculumPage() {
                             The Excellent Non-Academic Development
                         </h2>
                         <p className="leading-relaxed text-gray-800 mb-4">
-                            Our school administration is committed to providing students with
-                            comprehensive learning experiences that go beyond academics. We
-                            emphasize co-curricular programs that nurture creativity, leadership,
-                            and life skills essential for holistic growth.
+                            Our school administration always desires about providing comprehensive knowledge to our
+                            students other than academic coaching based on the curriculum.
                         </p>
                     </div>
 
@@ -177,14 +187,14 @@ export default function CurriculumPage() {
                         loading={"lazy"}
                         src="/images/curriculum/non-academic.JPG"
                         alt="Non Academic Activities"
-                        className="order-1 md:order-2 rounded-2xl shadow-lg max-h-64 object-cover md:max-h-[520px] w-full"
+                        className="order-1 md:order-2 rounded-2xl shadow-lg max-h-64 object-cover md:max-h-[320px] w-full"
                     />
                 </section>
 
                 {/* Skills Section */}
                 <CardSection
                     sectionTitle="Non-Academic Activities"
-                    sectionSubtitle="Beyond academics, we emphasize holistic development through creative, cultural, and leadership programs that build life skills and confidence."
+                    sectionSubtitle="Our school administration always desires a bout providing comprehensive knowledge to our students other than academic coaching based on the curriculum."
                     cards={nonAcademicCards}
                 />
             </div>
