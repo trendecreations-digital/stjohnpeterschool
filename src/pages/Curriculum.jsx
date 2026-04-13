@@ -23,14 +23,14 @@ export default function CurriculumPage() {
             image:
                 "/images/curriculum/pta.JPG",
         },
-        {
-            title: "Zero Hours",
-            description:
-                "At our school, we implement the Zero Hour system, offering students\n" +
-                "additional subject knowledge beyond the academic syllabus. This dedicated time allows for deeper exploration of topics, fostering a well-rounded understanding and promoting academic enrichment.",
-            image:
-                "/images/curriculum/pta.JPG",
-        },
+        // {
+        //     title: "Zero Hours",
+        //     description:
+        //         "At our school, we implement the Zero Hour system, offering students\n" +
+        //         "additional subject knowledge beyond the academic syllabus. This dedicated time allows for deeper exploration of topics, fostering a well-rounded understanding and promoting academic enrichment.",
+        //     image:
+        //         "/images/curriculum/pta.JPG",
+        // },
         {
             title: "Club Activities",
             description:
