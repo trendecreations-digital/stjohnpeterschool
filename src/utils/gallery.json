@@ -1,0 +1,167 @@
+{
+  "categories": [
+    {
+      "key": "all",
+      "label": "All"
+    },
+    {
+      "key": "kg_corner",
+      "label": "KG Corner"
+    },
+    {
+      "key": "club_activity",
+      "label": "Club Activity"
+    },
+    {
+      "key": "uniform_service",
+      "label": "Uniform Service"
+    },
+    {
+      "key": "leadership",
+      "label": "Leadership Quality"
+    },
+    {
+      "key": "competitions",
+      "label": "Competitions"
+    },
+    {
+      "key": "sports",
+      "label": "Sports"
+    },
+    {
+      "key": "awards_and_rewards",
+      "label": "Awards and Rewards"
+    },
+    {
+      "key": "school_events",
+      "label": "School Events"
+    },
+    {
+      "key": "special_events",
+      "label": "Special Events"
+    },
+    {
+      "key": "well_being_council",
+      "label": "Well Being Council"
+    },
+    {
+      "key": "camps_and_seminars",
+      "label": "Camps and Seminars"
+    },
+    {
+      "key": "magazines",
+      "label": "Magazines"
+    }
+  ],
+  "images": {
+    "kg_corner": [
+      "/images/gallery/kg_corner/handwash.jpg",
+      "/images/gallery/kg_corner/notice_board.jpg",
+      "/images/gallery/kg_corner/marine_day.jpg",
+      "/images/gallery/kg_corner/montessori.jpg",
+      "/images/gallery/kg_corner/leaf.jpg",
+      "/images/gallery/kg_corner/clay.jpg",
+      "/images/gallery/kg_corner/purple.jpg",
+      "/images/gallery/kg_corner/skg.jpg",
+      "/images/gallery/kg_corner/tangrine.jpg",
+      "/images/gallery/kg_corner/tiny_toy.jpg",
+      "/images/gallery/kg_corner/fithub.jpg"
+    ],
+    "club_activity": [
+      "/images/gallery/club_activity/inaugural.jpg",
+      "/images/gallery/club_activity/english.jpg",
+      "/images/gallery/club_activity/maths.jpg",
+      "/images/gallery/club_activity/maths-2.jpg",
+      "/images/gallery/club_activity/social.jpg",
+      "/images/gallery/club_activity/science.jpg",
+      "/images/gallery/club_activity/tamil.jpg",
+      "/images/gallery/club_activity/tamil-2.jpg"
+    ],
+    "uniform_service": [
+      "/images/gallery/uniform_service/bunny.jpg",
+      "/images/gallery/uniform_service/bunny-2.jpg",
+      "/images/gallery/uniform_service/cub.jpg",
+      "/images/gallery/uniform_service/cub-2.jpg",
+      "/images/gallery/uniform_service/jrc.jpg",
+      "/images/gallery/uniform_service/kodaikanal.jpeg",
+      "/images/gallery/uniform_service/plant.jpg",
+      "/images/gallery/uniform_service/scout.jpg"
+    ],
+    "leadership": [
+      "/images/gallery/leadership/1.jpg",
+      "/images/gallery/leadership/spl.jpg",
+      "/images/gallery/leadership/ASPL.jpg",
+      "/images/gallery/leadership/caption_and_vice_caption-1.jpg",
+      "/images/gallery/leadership/caption_and_vice_caption-2.jpg",
+      "/images/gallery/leadership/leader-1.jpg",
+      "/images/gallery/leadership/leader-2.jpg"
+    ],
+    "competitions": [
+      "/images/gallery/competitions/club.jpg",
+      "/images/gallery/competitions/silambam.jpg",
+      "/images/gallery/competitions/vegies.jpg",
+      "/images/gallery/competitions/quiz.jpeg",
+      "/images/gallery/competitions/spell_zone.jpg",
+      "/images/gallery/competitions/thirukural.jpg",
+      "/images/gallery/competitions/fithub.jpg",
+      "/images/gallery/competitions/i_can.jpg"
+    ],
+    "sports": [
+      "/images/gallery/sports/volley.jpg",
+      "/images/gallery/sports/volley-2.jpg",
+      "/images/gallery/sports/volley-3.jpg",
+      "/images/gallery/sports/run.jpeg",
+      "/images/gallery/sports/carrom.jpg",
+      "/images/gallery/sports/chess.jpg"
+    ],
+    "awards_and_rewards": [
+      "/images/gallery/awards_and_rewards/1.jpg",
+      "/images/gallery/awards_and_rewards/2.jpg",
+      "/images/gallery/awards_and_rewards/3.jpg",
+      "/images/gallery/awards_and_rewards/4.jpg",
+      "/images/gallery/awards_and_rewards/5.jpg"
+    ],
+    "school_events": [
+      "/images/gallery/school_events/children.jpg",
+      "/images/gallery/school_events/farewell.jpg",
+      "/images/gallery/school_events/independence.jpg",
+      "/images/gallery/school_events/republic.jpg",
+      "/images/gallery/school_events/teacher.jpg",
+      "/images/gallery/school_events/thinking.jpg",
+      "/images/gallery/school_events/student.jpg",
+      "/images/gallery/school_events/yoga.jpg"
+    ],
+    "special_events": [
+      "/images/gallery/special_events/chrismas-2.jpg",
+      "/images/gallery/special_events/christmas.jpg",
+      "/images/gallery/special_events/diwali.jpg",
+      "/images/gallery/special_events/diwali-2.jpg",
+      "/images/gallery/special_events/nilasoru.jpg",
+      "/images/gallery/special_events/alagar.jpg",
+      "/images/gallery/special_events/sunshine.jpg"
+    ],
+    "well_being_council": [
+      "/images/gallery/well_being_council/1.jpg",
+      "/images/gallery/well_being_council/2.jpg",
+      "/images/gallery/well_being_council/3.jpg",
+      "/images/gallery/well_being_council/4.jpg",
+      "/images/gallery/well_being_council/5.jpg",
+      "/images/gallery/well_being_council/6.jpg"
+    ],
+    "camps_and_seminars": [
+      "/images/gallery/camps_and_seminars/agriculture.jpeg",
+      "/images/gallery/camps_and_seminars/eye.jpg",
+      "/images/gallery/camps_and_seminars/dental.jpg"
+    ],
+    "magazines": [
+      "/images/gallery/magazines/1.jpg",
+      "/images/gallery/magazines/2.jpg",
+      "/images/gallery/magazines/3.jpg",
+      "/images/gallery/magazines/4.jpg",
+      "/images/gallery/magazines/5.jpg",
+      "/images/gallery/magazines/6.jpg",
+      "/images/gallery/magazines/7.jpg",
+      "/images/gallery/magazines/8.jpg"
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
+import galleryData from "../utils/gallery.json";
 
 const FloatingWhatsApp = lazy(() =>
     import("react-floating-whatsapp").then((m) => ({
@@ -6,117 +7,113 @@ const FloatingWhatsApp = lazy(() =>
     }))
 );
 
-/**
- * GalleryPage.jsx
- * Professional responsive image gallery with Tailwind CSS.
- *
- * Usage: <GalleryPage />
- *
- * Make sure tailwind is configured in your project.
- */
-
-const IMAGES = [
-    "/images/gallery/1.JPG",
-    "/images/gallery/2.jpg",
-    "/images/gallery/3.jpg",
-    "/images/gallery/4.jpg",
-    "/images/gallery/5.jpg",
-    "/images/gallery/6.JPG",
-    "/images/gallery/7.JPG",
-    "/images/gallery/8.JPG",
-    "/images/gallery/9.JPG",
-    "/images/gallery/10.JPG",
-    "/images/gallery/11.JPG",
-    "/images/gallery/12.JPG",
-    "/images/gallery/13.JPG",
-    "/images/gallery/14.JPG",
-    "/images/gallery/15.JPG",
-    "/images/gallery/16.JPG",
-    "/images/gallery/17.JPG",
-    "/images/gallery/18.JPG",
-    "/images/gallery/19.JPG",
-    "/images/gallery/20.JPG",
-    "/images/gallery/21.JPG",
-    "/images/gallery/22.JPG",
-    "/images/gallery/23.JPG",
-    "/images/gallery/24.jpg",
-    "/images/gallery/25.png",
-    "/images/gallery/26.png",
-    "/images/gallery/27.png",
-    "/images/gallery/28.jpeg",
-];
-
 export default function GalleryPage() {
     const [openIndex, setOpenIndex] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState("all");
+    const [filteredImages, setFilteredImages] = useState([]);
 
+    // Initial load (all images)
+    useEffect(() => {
+        const allImages = Object.values(galleryData.images).flat();
+        setFilteredImages(allImages);
+    }, []);
+
+    // Filter logic
+    useEffect(() => {
+        if (selectedCategory === "all") {
+            setFilteredImages(Object.values(galleryData.images).flat());
+        } else {
+            setFilteredImages(galleryData.images[selectedCategory] || []);
+        }
+        setOpenIndex(null);
+    }, [selectedCategory]);
+
+    // Keyboard navigation
     useEffect(() => {
         function onKey(e) {
             if (openIndex === null) return;
             if (e.key === "Escape") setOpenIndex(null);
-            if (e.key === "ArrowRight") setOpenIndex((i) => (i + 1) % IMAGES.length);
+            if (e.key === "ArrowRight")
+                setOpenIndex((i) => (i + 1) % filteredImages.length);
             if (e.key === "ArrowLeft")
-                setOpenIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length);
+                setOpenIndex(
+                    (i) => (i - 1 + filteredImages.length) % filteredImages.length
+                );
         }
         window.addEventListener("keydown", onKey);
         return () => window.removeEventListener("keydown", onKey);
-    }, [openIndex]);
+    }, [openIndex, filteredImages]);
 
     const openLightbox = (idx) => setOpenIndex(idx);
     const closeLightbox = () => setOpenIndex(null);
+
     const prev = () =>
-        setOpenIndex((i) => (i - 1 + IMAGES.length) % IMAGES.length);
-    const next = () => setOpenIndex((i) => (i + 1) % IMAGES.length);
+        setOpenIndex((i) => (i - 1 + filteredImages.length) % filteredImages.length);
+
+    const next = () =>
+        setOpenIndex((i) => (i + 1) % filteredImages.length);
 
     return (
         <main className="min-h-screen bg-school-secondary text-red-800 py-12">
+            {/* WhatsApp */}
             <Suspense fallback={null}>
                 <FloatingWhatsApp
                     phoneNumber="+918778837765"
                     accountName="Support Team"
-                    chatMessage="Hi 👋 How can we help you?"
-                    placeholder="Type your message..."
-                    statusMessage="Typically replies within minutes"
-                    allowClickAway={true}
-                    notification={true}
-                    notificationDelay={5}
                 />
             </Suspense>
+
             <div className="container mx-auto px-6 lg:px-8">
+                {/* Header */}
                 <header className="mb-10 text-center">
-                    <h1 className="text-4xl sm:text-5xl uppercase font-bold text-red-800"    >
+                    <h1 className="text-4xl sm:text-5xl uppercase font-bold">
                         Gallery
                     </h1>
-                    <p className="mt-4 max-w-2xl mx-auto text-lg text-gary-800">
-                        Explore snapshots from our academic and co-curricular life —
-                        classrooms, clubs, sports, events and field trips.
+                    <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-700">
+                        Explore snapshots from our academic and co-curricular life.
                     </p>
                 </header>
 
-                {/* Grid */}
+                {/* FILTERS */}
+                <div className="flex flex-wrap justify-center gap-3 mb-10">
+                    {galleryData.categories.map((cat) => (
+                        <button
+                            key={cat.key}
+                            onClick={() => setSelectedCategory(cat.key)}
+                            className={`px-4 py-2 rounded-full border transition ${
+                                selectedCategory === cat.key
+                                    ? "bg-red-800 text-white"
+                                    : "bg-white text-gray-800 hover:bg-gray-100"
+                            }`}
+                        >
+                            {cat.label}
+                        </button>
+                    ))}
+                </div>
+
+                {/* GRID */}
                 <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {IMAGES.map((img, idx) => (
+                    {filteredImages.map((img, idx) => (
                         <article
                             key={idx}
-                            className="relative bg-red-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
+                            className="relative bg-red-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition"
                         >
                             <button
-                                type="button"
                                 onClick={() => openLightbox(idx)}
-                                className="group block w-full text-left"
-                                aria-label={`Open image: ${img}`}
+                                className="group block w-full"
                             >
-                                <div className="w-full h-56 sm:h-48 md:h-44 lg:h-52 overflow-hidden">
+                                <div className="w-full h-56 overflow-hidden">
                                     <img
                                         src={img}
-                                        alt={img}
+                                        alt={`gallery-${idx}`}
                                         loading="lazy"
-                                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                        className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                                     />
                                 </div>
 
-                                {/* overlay icon */}
-                                <div className="absolute inset-0 flex items-start justify-end p-3 pointer-events-none">
-                  <span className="bg-white/80 text-gray-800 text-xs font-medium px-3 py-1 rounded-full shadow-sm pointer-events-none">
+                                {/* overlay */}
+                                <div className="absolute inset-0 flex items-start justify-end p-3">
+                  <span className="bg-white/80 text-gray-800 text-xs px-3 py-1 rounded-full">
                     View
                   </span>
                                 </div>
@@ -125,13 +122,12 @@ export default function GalleryPage() {
                     ))}
                 </section>
 
-                {/* Lightbox Modal */}
+                {/* LIGHTBOX MODAL */}
                 {openIndex !== null && (
                     <div
                         className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
                         role="dialog"
                         aria-modal="true"
-                        aria-label="Image preview"
                         onClick={closeLightbox}
                     >
                         <div
@@ -141,8 +137,7 @@ export default function GalleryPage() {
                             {/* Close */}
                             <button
                                 onClick={closeLightbox}
-                                aria-label="Close"
-                                className="absolute top-4 right-4 z-20 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 shadow"
+                                className="absolute top-4 right-4 z-20 bg-white/90 hover:bg-white rounded-full p-2 shadow"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +157,6 @@ export default function GalleryPage() {
                             <button
                                 onClick={prev}
                                 className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white rounded-full p-2 shadow"
-                                aria-label="Previous"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +178,6 @@ export default function GalleryPage() {
                             <button
                                 onClick={next}
                                 className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white rounded-full p-2 shadow"
-                                aria-label="Next"
                             >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -205,11 +198,15 @@ export default function GalleryPage() {
                             {/* Image */}
                             <div className="w-full bg-black/90 flex items-center justify-center">
                                 <img
-                                    src={IMAGES[openIndex]}
-                                    alt={IMAGES[openIndex]}
-                                    loading="lazy"
-                                    className="max-h-[75vh] w-auto object-contain"
+                                    src={filteredImages[openIndex]}
+                                    alt={`preview-${openIndex}`}
+                                    className="max-h-[75vh] object-contain"
                                 />
+                            </div>
+
+                            {/* Counter */}
+                            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
+                                {openIndex + 1} / {filteredImages.length}
                             </div>
                         </div>
                     </div>
