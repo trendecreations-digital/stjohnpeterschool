@@ -8,11 +8,13 @@ export default function Navbar() {
         { name: "Curriculum", path: "/curriculum" },
         { name: "Infrastructure", path: "/infrastructure" },
         { name: "Gallery", path: "/gallery" },
+        { name: "Uniform Service", path: "/uniform-service" },
+        { name: "Magazines", path: "/magazines" },
         { name: "Contact", path: "/contact" },
     ];
 
     return (
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex flex-wrap items-center gap-8">
             {links.map((link, i) => (
                 <NavLink
                     key={i}

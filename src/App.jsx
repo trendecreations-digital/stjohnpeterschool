@@ -19,6 +19,8 @@ const InfrastructurePage = lazy(() => import("./pages/Infrastructure.jsx"));
 const GalleryPage = lazy(() => import("./pages/Gallery.jsx"));
 const ContactPage = lazy(() => import("./pages/Contact.jsx"));
 const NotFoundPage = lazy(() => import("./pages/PageNotFound.jsx"));
+const UniformServicePage = lazy(() => import("./pages/UniformService.jsx"));
+const MagazinesPage = lazy(() => import("./pages/Magazines.jsx"));
 
 // Lightweight loader (no layout shift)
 
@@ -39,6 +41,8 @@ export default function App() {
                     <Route path="/infrastructure" element={<InfrastructurePage />} />
                     <Route path="/gallery" element={<GalleryPage />} />
                     <Route path="/contact" element={<ContactPage />} />
+                    <Route path="/uniform-service" element={<UniformServicePage />} />
+                    <Route path="/magazines" element={<MagazinesPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                 </Routes>
             </Suspense>

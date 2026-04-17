@@ -24,7 +24,7 @@ export default function Header() {
                         className="h-14 w-14 object-contain drop-shadow-lg"
                     />
                     <div className="leading-tight">
-                        <h1 className="text-xl font-semibold tracking-tight">
+                        <h1 className="text-xl w-64 font-semibold tracking-tight">
                             ST. JOHN PETER
                         </h1>
                         <h2 className="text-lg tracking-tight">MATRIC HIGH SCHOOL</h2>
@@ -58,6 +58,8 @@ export default function Header() {
                         { name: "Curriculum", path: "/curriculum" },
                         { name: "Infrastructure", path: "/infrastructure" },
                         { name: "Gallery", path: "/gallery" },
+                        { name: "Uniform Service", path: "/uniform-service" },
+                        { name: "Magazines", path: "/magazines" },
                         { name: "Contact", path: "/contact" },
                     ].map((link, i) => (
                         <Link
