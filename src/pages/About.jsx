@@ -66,7 +66,7 @@ export default function AboutPage() {
                                 src="/images/about-us/Dean.jpeg"
                                 alt="dean"
                                 loading="lazy"
-                                className="w-full h-full mt-4 object-cover group-hover:scale-105 transition duration-500"
+                                className="w-full lg:w-96 h-full mt-4 object-cover group-hover:scale-105 transition duration-500"
                             />
 
                             <div>
