@@ -14,7 +14,7 @@ export default function Magazines() {
     // ✅ Echo Events → now IMAGE GALLERIES
     const echoEvents = [
         {
-            title: "Echo Events",
+            title: "Event Echoes",
             subtitle: "Edition 1",
             images: [
                 "/images/magazines/Echo_Events-Edition_1/1.jpg",
@@ -29,7 +29,7 @@ export default function Magazines() {
             cover: "/images/magazines/Echo_Events-Edition_1/1.jpg",
         },
         {
-            title: "Echo Events",
+            title: "Event Echoes",
             subtitle: "Edition 2",
             images: [
                 "/images/magazines/Echo_Events-Edition_2/1.jpg",
@@ -83,10 +83,10 @@ export default function Magazines() {
                 <section>
                     <div className="text-center mb-12 max-w-4xl mx-auto">
                         <h2 className="text-3xl md:text-5xl font-bold text-red-800 text-uppercase mb-6">
-                            ECHO EVENTS (Term Edition)
+                            EVENT ECHOES (Term Edition)
                         </h2>
                         <p className="text-lg text-gray-800">
-                            Echo Events is our Term-Based Magazine Edition that captures the major events, celebrations, competitions, and achievements of each academic term.
+                            Event Echoes is our Term-Based Magazine Edition that captures the major events, celebrations, competitions, and achievements of each academic term.
                         </p>
                     </div>
 

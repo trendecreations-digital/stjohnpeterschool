@@ -53,46 +53,59 @@ export default function AboutPage() {
                             />
                         </div>
                     </div>
-                    <div className="md:w-2/3 mx-auto bg-white/80 backdrop-blur-lg p-8 md:p-12 rounded-3xl shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300">
+                    <div
+                        className="md:w-2/3 mx-auto bg-white/80 backdrop-blur-lg p-8 md:p-12 rounded-3xl shadow-xl border border-gray-200 hover:shadow-2xl transition duration-300">
                         <div className="text-center mb-6">
                             <h2 className="text-3xl md:text-4xl font-bold text-red-800 uppercase tracking-wide">
                                 Dean's Message
                             </h2>
                         </div>
 
-                        {/* Content */}
-                        <p className="text-gray-700 text-lg leading-relaxed text-justify">
-                            With a proud <span className="font-semibold text-red-700">35 years of legacy</span>,
-                            St. John Peter Matric High School has consistently upheld superior discipline
-                            and delivered enriched education to shape confident and responsible learners.
-                            Our institution believes that discipline and values form the strong foundation
-                            for academic excellence and character development.
-                        </p>
+                        <div className="flex flex-col lg:flex-row gap-16 lg:gap-12 items-start">
+                            <img
+                                src="/images/about-us/Dean.jpeg"
+                                alt="dean"
+                                loading="lazy"
+                                className="w-full h-full mt-4 object-cover group-hover:scale-105 transition duration-500"
+                            />
 
-                        <p className="mt-4 text-gray-700 text-lg leading-relaxed text-justify">
-                            We embrace innovative teaching methods that make learning engaging, meaningful,
-                            and future-ready. By integrating modern technology and creative approaches, we
-                            ensure that every child experiences quality education that nurtures knowledge,
-                            skills, and confidence.
-                        </p>
-
-                        <p className="mt-4 text-gray-700 text-lg leading-relaxed text-justify">
-                            We are committed to developing highly socially responsible students through
-                            value-based education. By nurturing empathy, integrity, leadership, and respect
-                            for society, we guide our students to become responsible citizens who contribute
-                            positively to the community and the nation.
-                        </p>
-
-                        {/* Signature */}
-                        <div className="mt-8 flex justify-end">
-                            <div className="text-right">
-                                <p className="font-semibold text-gray-900 text-lg">Dr. B. Vinod, PhD</p>
-                                <p className="text-gray-600">Dean of Academics</p>
-                                <p className="text-gray-500 text-sm">
-                                    St. John Peter Matric High School
+                            <div>
+                                {/* Content */}
+                                <p className="text-gray-700 text-lg leading-relaxed text-justify">
+                                    With a proud <span className="font-semibold text-red-700">35 years of legacy</span>,
+                                    St. John Peter Matric High School has consistently upheld superior discipline
+                                    and delivered enriched education to shape confident and responsible learners.
+                                    Our institution believes that discipline and values form the strong foundation
+                                    for academic excellence and character development.
                                 </p>
+
+                                <p className="mt-4 text-gray-700 text-lg leading-relaxed text-justify">
+                                    We embrace innovative teaching methods that make learning engaging, meaningful,
+                                    and future-ready. By integrating modern technology and creative approaches, we
+                                    ensure that every child experiences quality education that nurtures knowledge,
+                                    skills, and confidence.
+                                </p>
+
+                                <p className="mt-4 text-gray-700 text-lg leading-relaxed text-justify">
+                                    We are committed to developing highly socially responsible students through
+                                    value-based education. By nurturing empathy, integrity, leadership, and respect
+                                    for society, we guide our students to become responsible citizens who contribute
+                                    positively to the community and the nation.
+                                </p>
+
+                                {/* Signature */}
+                                <div className="mt-8 flex justify-end">
+                                    <div className="text-right">
+                                        <p className="font-semibold text-gray-900 text-lg">Dr. B. Vinod, PhD</p>
+                                        <p className="text-gray-600">Dean of Academics</p>
+                                        <p className="text-gray-500 text-sm">
+                                            St. John Peter Matric High School
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div className="bg-red-800 py-12 px-6">
@@ -122,7 +135,7 @@ export default function AboutPage() {
                                     tomorrow's leaders with passion and purpose.<br/><br/>
                                 </p>
                                 <ul className="space-y-4 text-gray-800">
-                                <li className="flex items-baseline gap-4 text-gray-50">
+                                    <li className="flex items-baseline gap-4 text-gray-50">
                                         <span className="text-2xl font-bold">&#8227;</span>
                                         <span className="text-lg">Fostering unique talents and skills..</span>
                                     </li>

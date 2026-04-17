@@ -80,10 +80,10 @@ export default function GalleryPage() {
                         <button
                             key={cat.key}
                             onClick={() => setSelectedCategory(cat.key)}
-                            className={`px-4 py-2 rounded-full border transition ${
+                            className={`px-8 py-2 rounded-xl border transition ${
                                 selectedCategory === cat.key
-                                    ? "bg-red-800 text-white"
-                                    : "bg-white text-gray-800 hover:bg-gray-100"
+                                    ? "bg-red-800 text-school-secondary shadow-2xl"
+                                    : "bg-gray-50 text-gray-800 hover:bg-red-800 hover:text-school-secondary hover:shadow-black"
                             }`}
                         >
                             {cat.label}

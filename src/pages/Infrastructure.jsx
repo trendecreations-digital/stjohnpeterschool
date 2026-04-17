@@ -120,7 +120,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="/images/gallery/7.JPG"
+                        src="/images/infrastructure/maintainance.jpeg"
                         alt="Clean Campus"
                         className="rounded-2xl shadow-lg w-full h-90 object-cover"
                     />
@@ -174,7 +174,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="/images/gallery/9.JPG"
+                        src="/images/infrastructure/a-v-room.jpeg"
                         alt="Audio Visual Room"
                         className="rounded-2xl shadow-lg w-full h-90 object-cover"
                     />
@@ -229,7 +229,7 @@ export default function InfrastructurePage() {
                     </div>
                     <img
                         loading={"lazy"}
-                        src="./images/banner.jpg"
+                        src="./images/infrastructure/blocks.jpeg"
                         alt="Separate Blocks"
                         className="rounded-2xl shadow-lg w-full h-90 object-cover"
                     />

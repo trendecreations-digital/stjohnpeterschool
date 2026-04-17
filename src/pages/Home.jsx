@@ -162,7 +162,7 @@ export default function Home() {
                         <div className="flex flex-col gap-4">
                             <p className="text-gray-700 space-y-8 leading-relaxed">
                                 Follows the CBSC pattern International Syllabus focused on thematic and
-                                activity-based learning with English, Math, Science, and Life Skills.
+                                activity-based learning with Tamil, English, Math, Science, and Life Skills.
                             </p>
                             <p className="text-gray-700 space-y-8 leading-relaxed">
                                 Interactive lessons and small group activities, and all-round and child development with
@@ -222,16 +222,16 @@ export default function Home() {
                         <h3 className="text-2xl font-semibold text-red-800 mb-4">Class VI to X</h3>
                         <div className="flex flex-col gap-4">
                             <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Follows the Government Unified Syllabus focused on thematic and
-                                activity-based learning with English, Math, Science, and Life Skills.
+                                Follow our <b>Government Unified Syllabus</b>, emphasizing thematic and activity-based learning. We nurture all-round child development through:
                             </p>
-                            <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Interactive lessons and small group activities, and all-round and child development with
-                                regular assessments.
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span>Interactive lessons and small-group activities</span>
                             </p>
-                            <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Integration of arts, sports, music, drama and value-based education from the early
-                                years.
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span>Regular assessments for personalized growth</span>
+                            </p>
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span>Seamless integration of arts, sports, music, drama, and value-based education from the early years</span>
                             </p>
                         </div>
                     </div>
@@ -283,14 +283,12 @@ export default function Home() {
                     <Counter end={1000} label="Students"/>
                     <Counter end={70} label="Faculty"/>
                 </div>
-                <div className="rounded-2xl bg-school-secondary p-6 shadow-md max-w-6xl">
+                <div className="rounded-2xl bg-school-secondary p-6 shadow-md max-w-6xl w-full">
                     <h2 className="text-4xl font-bold text-red-800 uppercase text-center">Quick updates & notices</h2>
-                    <ul className="list-disc list-inside space-y-2 pt-4">
-                        <li>Thirukkural Recitation Competition conducted on 07.01.2026.
-                        </li>
-                        <li>Pongal was celebrated with traditional activities, cultural programs, and student
-                            participation, highlighting our rich heritage.
-                        </li>
+                    <ul className="list-disc list-inside space-y-2 pt-4 px-8">
+                        <li><b>Admission Open</b> for 2026-2027 Academic Year</li>
+                        <li><b>Results</b> publishing soon</li>
+                        <li><b>Reopening date</b> announced later</li>
                     </ul>
                 </div>
             </section>

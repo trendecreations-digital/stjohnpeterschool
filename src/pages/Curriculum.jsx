@@ -126,8 +126,8 @@ export default function CurriculumPage() {
                 </h1>
                 <p className="max-w-3xl mx-auto text-lg opacity-90 text-gray-800">
                     Our school offers a comprehensive educational journey from Pre- KG to Grade
-                    X. We integrate a specialized combined curriculum, combining CBSC standards up to Grade IV with a
-                    unified syllabus from Grade V to Grade X.
+                    X. We integrate a specialized combined curriculum, combining CBSC standards up to Grade V with a
+                    unified syllabus from Grade VI to Grade X.
                 </p>
             </section>
 
