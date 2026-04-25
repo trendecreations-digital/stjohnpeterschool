@@ -19,31 +19,31 @@ const FloatingWhatsApp = lazy(() =>
 export default function UniformService() {
     const wings = [
         {
-            title: "Bunny Wing",
+            title: "Bunny Wing (LKG to I)",
             gender: "Boys & Girls",
             desc: "Introduces discipline, sharing, caring, and moral values through fun games, rhymes, storytelling, and joyful activities.",
             img: "/images/uniform/Bunny.jpg",
         },
         {
-            title: "Cub Wing",
+            title: "Cub Wing (II to V)",
             gender: "Boys",
             desc: "Builds good habits, teamwork, courage, and responsibility via jungle games, drills, nature study, and character activities.",
             img: "/images/uniform/CUB.jpg",
         },
         {
-            title: "Bulbul Wing",
+            title: "Bulbul Wing (II to V)",
             gender: "Girls",
             desc: "Nurtures creativity, confidence, kindness, and leadership with songs, action games, group activities, and value-based learning.",
             img: "/images/uniform/Bulbul.jpg",
         },
         {
-            title: "Scout Wing",
+            title: "Scout Wing (VI to IX)",
             gender: "Boys",
             desc: "Focuses on leadership, camping, hiking, pioneering, first aid, parade, and community service for disciplined citizenship.",
             img: "/images/uniform/Scout.jpg",
         },
         {
-            title: "Guide Wing",
+            title: "Guide Wing (VI to IX) ",
             gender: "Girls",
             desc: "Empowers with confidence, service mindset, and leadership through camps, social service, skill programs, and national observances.",
             img: "/images/uniform/Guide.jpg",

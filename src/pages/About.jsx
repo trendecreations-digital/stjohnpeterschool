@@ -61,12 +61,12 @@ export default function AboutPage() {
                             </h2>
                         </div>
 
-                        <div className="flex flex-col lg:flex-row gap-16 lg:gap-12 items-start">
+                        <div className="flex flex-col gap-16 lg:gap-12 items-start">
                             <img
-                                src="/images/about-us/Dean.jpeg"
+                                src="/images/about-us/dean-outfocus.jpeg"
                                 alt="dean"
                                 loading="lazy"
-                                className="w-full lg:w-96 h-full mt-4 object-cover group-hover:scale-105 transition duration-500"
+                                className="w-full h-full mt-4 object-cover group-hover:scale-105 transition duration-500"
                             />
 
                             <div>
@@ -96,7 +96,8 @@ export default function AboutPage() {
                                 {/* Signature */}
                                 <div className="mt-8 flex justify-end">
                                     <div className="text-right">
-                                        <p className="font-semibold text-gray-900 text-lg">Dr. B. Vinod, PhD</p>
+                                        <p className="font-semibold text-gray-900 text-lg">Dr. B. Vinod</p>
+                                        <p className="text-gray-700">MS(Edu).,MBA.,MHRM.,B.Ed.,M.Phil.,Ph.D.,</p>
                                         <p className="text-gray-600">Dean of Academics</p>
                                         <p className="text-gray-500 text-sm">
                                             St. John Peter Matric High School

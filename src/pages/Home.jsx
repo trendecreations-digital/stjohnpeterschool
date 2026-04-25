@@ -156,21 +156,19 @@ export default function Home() {
             <section className="flex flex-col-reverse md:flex-row justify-between py-8
                bg-[url('/images/overlay.png')]
                bg-cover bg-center bg-blend-overlay">
-                <div className="flex items-center py-8">
+                <div className="flex items-center md:w-2/3 py-8">
                     <div className="bg-gray-50 p-8 md:p-20 md:rounded-r-3xl shadow-2xl z-index-10">
                         <h3 className="text-2xl font-semibold text-red-800 mb-4">KG to Class V</h3>
                         <div className="flex flex-col gap-4">
                             <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Follows the CBSC pattern International Syllabus focused on thematic and
-                                activity-based learning with Tamil, English, Math, Science, and Life Skills.
+                                Our <b>CBSE-pattern curriculum</b> for KG to Class V emphasizes thematic and activity-based
+                                learning in Tamil, English, Math, Science, and Life Skills. Interactive lessons, small
+                                group activities, and regular assessments nurture all-round child development.</p>
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span><b>KG Special Focus:</b> Montessori activities, active learning methodology, fine motor skill development, moral-based education, little leadership enhancement program, and hands-on "learning by doing" to spark curiosity and confidence from the start.</span>
                             </p>
-                            <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Interactive lessons and small group activities, and all-round and child development with
-                                regular assessments.
-                            </p>
-                            <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Integration of arts, sports, music, drama and value-based education from the early
-                                years.
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span><b>Classes I to V:</b> Progressive skill-building with integration of arts, sports, music, drama, and value-based education for holistic growth.</span>
                             </p>
                         </div>
                     </div>
@@ -219,11 +217,11 @@ export default function Home() {
                 </div>
                 <div className="flex py-8 items-center">
                     <div className="bg-gray-50 p-8 md:p-20 md:rounded-l-3xl shadow-2xl z-index-10">
-                        <h3 className="text-2xl font-semibold text-red-800 mb-4">Class VI to X</h3>
+                        <h3 className="text-2xl font-semibold text-red-800 mb-4">Class VI to X: Empowering Future Leaders</h3>
                         <div className="flex flex-col gap-4">
                             <p className="text-gray-700 space-y-8 leading-relaxed">
-                                Follow our <b>Government Unified Syllabus</b>, emphasizing thematic and activity-based learning. We nurture all-round child development through:
-                            </p>
+                                Follow our <b>Samacheer Government Unified Syllabus</b>, emphasizing thematic and
+                                activity-based learning. We nurture all-round child development through:</p>
                             <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
                                 &#9658;<span>Interactive lessons and small-group activities</span>
                             </p>
@@ -231,7 +229,13 @@ export default function Home() {
                                 &#9658;<span>Regular assessments for personalized growth</span>
                             </p>
                             <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
-                                &#9658;<span>Seamless integration of arts, sports, music, drama, and value-based education from the early years</span>
+                                &#9658;<span>Life Skills and extracurricular programs</span>
+                            </p>
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span>Speed Maths (Abacus) for mental agility</span>
+                            </p>
+                            <p className="flex gap-2 text-gray-700 space-y-8 leading-relaxed">
+                                &#9658;<span>Seamless integration of arts, sports, music, drama, and value-based education</span>
                             </p>
                         </div>
                     </div>

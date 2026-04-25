@@ -7,7 +7,7 @@ import {
     Volume2,
     Activity,
     Users,
-    Lightbulb
+    Footprints
 } from "lucide-react";
 
 const FloatingWhatsApp = lazy(() =>
@@ -235,32 +235,25 @@ export default function InfrastructurePage() {
                     />
                 </section>
 
-                {/* UPS POWER BACKUP */}
-                {/*<section className="grid md:grid-cols-2 px-6 md:py-8 gap-10 items-center">*/}
-                {/*    <img*/}
-                {/*        loading={"lazy"}*/}
-                {/*        src="/images/infrastructure/activity.JPG"*/}
-                {/*        alt="Activity Room"*/}
-                {/*        className="rounded-2xl shadow-lg w-full h-90 object-cover order-2 md:order-1"*/}
-                {/*    />*/}
-                {/*    <div className="order-1 md:order-2">*/}
-                {/*        <h2 className="text-2xl font-semibold text-red-800 flex items-center gap-2 mb-3 uppercase">*/}
-                {/*            <Lightbulb className="text-red-700" /> UPS POWER BACKUP*/}
-                {/*        </h2>*/}
-                {/*        <p className="leading-relaxed text-gray-800">*/}
-                {/*            To ensure uninterrupted learning and comfort for our students, our school has implemented a*/}
-                {/*            UPS power backup system across select areas, including Pre-KG to Grade II classrooms and*/}
-                {/*            certain sections of the campus. This proactive measure safeguards against power outages,*/}
-                {/*            allowing teaching and learning activities to proceed seamlessly. <br/><br/>*/}
-                {/*            With UPS power backup in place, students can continue their studies without disruptions,*/}
-                {/*            maintaining focus and engagement in their lessons. Our priority is to provide a reliable and*/}
-                {/*            conducive learning environment where students can thrive academically and feel supported in*/}
-                {/*            their educational journey. By investing in UPS power backup technology, we demonstrate our*/}
-                {/*            commitment to delivering quality education and prioritizing the well-being and comfort of*/}
-                {/*            our students throughout their school day.*/}
-                {/*        </p>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
+                {/* Toddler Fit Hub */}
+                <section className="grid md:grid-cols-2 px-6 md:py-8 gap-10 items-center">
+                    <img
+                        loading={"lazy"}
+                        src="/images/infrastructure/toddler.jpeg"
+                        alt="Activity Room"
+                        className="rounded-2xl shadow-lg w-full h-90 object-cover order-2 md:order-1"
+                    />
+                    <div className="order-1 md:order-2">
+                        <h2 className="text-2xl font-semibold text-red-800 flex items-center gap-2 mb-3 uppercase">
+                            <Footprints className="text-red-700" /> Toddler Fit Hub
+                        </h2>
+                        <p className="leading-relaxed text-gray-800">
+                            Our special fitness space for little stars boosting flexibility, balance, and motor skills
+                            through fun play! Equipped with soft play mats, balance beams, mini obstacle, colorful
+                            climbing structures, etc.
+                        </p>
+                    </div>
+                </section>
             </div>
         </main>
     );
