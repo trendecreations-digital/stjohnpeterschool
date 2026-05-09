@@ -74,6 +74,18 @@ export default function Header() {
                     ))}
                 </div>
             </div>
+           <div className="bg-yellow-400 overflow-hidden py-3">
+    <div className="flex w-max animate-marquee">
+        {[...Array(6)].map((_, i) => (
+            <span
+                key={i}
+                className="mx-6 md:mx-10 flex-shrink-0 text-red-800 font-extrabold text-sm md:text-2xl uppercase whitespace-nowrap"
+            >
+                🎓 Admissions Open Now 2026-2027
+            </span>
+        ))}
+    </div>
+</div>
         </header>
     );
 }
