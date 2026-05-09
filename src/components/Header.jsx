@@ -83,7 +83,7 @@ export default function Header() {
             >
                 🎓 Admissions Open Now 2026-2027
             </span>
-        ))}
+        ))} 
     </div>
 </div>
         </header>
