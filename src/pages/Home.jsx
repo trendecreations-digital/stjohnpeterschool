@@ -305,7 +305,7 @@ export default function Home() {
                         <h2 className="text-3xl font-bold text-center uppercase text-school-secondary mb-8">
                             Topper of the Years 2024 to 2025
                         </h2>
-                        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+                        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-10">
                             {toppers.map((t, i) => (
                                 <div
                                     key={i}
