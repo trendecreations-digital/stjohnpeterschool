@@ -44,10 +44,9 @@ export default function Home() {
     }, [reviews.length]);
 
     const toppers = [
-        { name: "MARAGATHAVEL N", mark: "492/500", image: "/images/home/toppers/maragathavel.jpeg" },
-        { name: "JANANI M J", mark: "487/500", image: "/images/home/toppers/janani.jpeg" },
-        { name: "JAIGOWTHAM M", mark: "480/500", image: "/images/home/toppers/jaigowtham.jpeg" },
-        { name: "KAVYA P M", mark: "480/500", image: "/images/home/toppers/kavya.jpeg" },
+        { name: "SUDHEESH P", mark: "487/500", image: "/images/home/toppers/sudheesh.jpeg" },
+        { name: "DHARANI R", mark: "479/500", image: "/images/home/toppers/dharani.jpg.jpeg" },
+        { name: "LEKHA K", mark: "478/500", image: "/images/home/toppers/lekha.jpg.jpeg" },
     ];
 
     return (
